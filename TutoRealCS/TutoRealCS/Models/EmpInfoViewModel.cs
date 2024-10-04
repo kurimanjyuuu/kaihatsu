@@ -10,19 +10,14 @@ namespace TutoRealCS.Models
     public class EmpInfoViewModel : BaseViewModel
     {
         /// <summary>
-        /// ID
-        /// </summary>
-        public int Id { get; set; } = 0;
-
-        /// <summary>
         /// 社員番号
         /// </summary>  
-        public int EmpId { get; set; } = 0;
+        public int EmpId { get; set; }
 
         /// <summary>
         /// 部署コード
         /// </summary>  
-        public int DeptCode { get; set; } = 0;
+        public int DeptCode { get; set; }
 
         /// <summary>
         /// 姓
@@ -32,7 +27,7 @@ namespace TutoRealCS.Models
         /// <summary>
         /// 名
         /// </summary>
-        public string Meikanij { get; set; } = string.Empty;
+        public string Meikanji { get; set; } = string.Empty;
 
         /// <summary>
         /// せい

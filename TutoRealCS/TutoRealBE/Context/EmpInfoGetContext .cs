@@ -36,12 +36,12 @@ namespace TutoRealBE.Context
         /// <summary>
         /// 社員番号
         /// </summary>
-        public int EmpId { get; set; } = 0;
+        public int EmpId { get; set; }
 
         /// <summary>
         /// 部署コード
         /// </summary>
-        public int DeptCode { get; set; } = 0;
+        public int DeptCode { get; set; }
 
         /// <summary>
         /// 姓
@@ -69,23 +69,28 @@ namespace TutoRealBE.Context
         public string MailAddress { get; set; } = string.Empty;
 
         /// <summary>
-        /// フルネーム
+        /// フルネーム 漢字
         /// </summary>
-        public string FullName => $"{Seikanji} {MeiKanji}";
+        public string FullNameKanji => $"{Seikanji} {MeiKanji}";
+
+        /// <summary>
+        /// フルネーム かな
+        /// </summary>
+        public string FullNameKana => $"{Seikana} {Meikana}";
 
         /// <summary>
         /// 入力データの検証
         /// </summary>
         private void Validate()
         {
-            if (EmpId <= 0)
+            if (EmpId <= 7)
             {
-                throw new ArgumentException("社員番号は正の整数でなければなりません。");
+                throw new ArgumentException("社員番号は7桁でなければなりません。");
             }
 
-            if (DeptCode <= 0)
+            if (DeptCode <= 4)
             {
-                throw new ArgumentException("部署コードは正の整数でなければなりません。");
+                throw new ArgumentException("部署コードは4桁でなければなりません。");
             }
 
             // メールアドレスの検証

@@ -11,91 +11,66 @@
     <script src="~/js/Book/bookregist.js"></script>
 }
 
-<form id="trForm" class="card startform" asp-controller="EmpInfo" asp-action="index" method="POST" enctype="multipart/form-data">
+<form id="trForm" class="card startform" asp-controller="EmpInfo" asp-action="Index" method="POST" enctype="multipart/form-data">
     @* 画面全体 *@
     <div class="maincontents-layout">
         <div class="card">
-            <label class="lblRegion">  登録条件</label><br />
+            <label class="lblRegion">登録条件</label><br />
             <div class="divRegion">
                 <table class="tableCommon">
-                    <thead>
                         <tr class="trFixHeight">
                             <td class="tdLabel">社員番号：</td>
                             <td class="tdItem">
                                 <input type="text" asp-for="@Model.EmpId" class="textbox w240" maxlength="7" />
                             </td>
+                        </tr>
+                        <tr class="trFixHeight">
                             <td class="tdLabel">部署コード：</td>
                             <td class="tdItem">
                                 <input type="text" asp-for="@Model.DeptCode" class="textbox w240" maxlength="4" />
                             </td>
+                        </tr>
+                    <tr class="trFixHeight">
                             <td class="tdLabel">姓：</td>
                             <td class="tdItem">
                                 <input type="text" asp-for="@Model.Seikanji" class="textbox w240" maxlength="20" />
                             </td>
+                        </tr>
+                        <tr class="trFixHeight">
                             <td class="tdLabel">名：</td>
                             <td class="tdItem">
-                                <input type="text" asp-for="@Model.Meikanij" class="textbox w240" maxlength="20" />
+                            <input type="text" asp-for="@Model.Meikanji" class="textbox w240" maxlength="20" />
                             </td>
+                        </tr>
+                        <tr class="trFixHeight">
                             <td class="tdLabel">せい：</td>
                             <td class="tdItem">
                                 <input type="text" asp-for="@Model.Seikana" class="textbox w240" maxlength="20" />
+                        </tr>
+                        <tr class="trFixHeight">
                             <td class="tdLabel">めい：</td>
                             <td class="tdItem">
                                 <input type="text" asp-for="@Model.Meikana" class="textbox w240" maxlength="20" />
                             </td>
+                        </tr>
+                        <tr class="trFixHeight">
                             <td class="tdLabel">メールアドレス：</td>
                             <td class="tdItem">
                                 <input type="text" asp-for="@Model.MailAddress" class="textbox w240" maxlength="50" />
                             </td>
                         </tr>
-                        <tr>
-                            <td class="tdItem">
-                                <button type="submit"class="btnSearch w120">登録</button>
+                        <tr class="trFixHeight">
+                            <td class="button">
+                                <button type="submit" class="btnSearch w120">登録</button>
+                                <button class="btnSearch w120">検索</button>        
+                                <button type="submit" class="btnSearch w120">削除</button>
                             </td>
                         </tr>
-                    </thead>
                 </table>
             </div>
         </div>
         @* 検索条件 *@
-        <div class="card">
-            <label class="lblRegion">検索条件</label><br/>
-            <div class="divRegion">
-                <table class="tableCommon">
-                    <thead>
-                        <tr class="trFixHeight">
-                            <td class="tdLabel">社員番号：</td>
-                            <td class="tdItem">
-                                <input type="text" asp-for="@Model.Number" class="textbox w240" maxlength="50" />
-                            </td>
-                            <td class="tdLabel">氏名かな：</td>
-                            <td class="tdItem">
-                                <input type="text" asp-for="@Model.Onamae" class="textbox w240" maxlength="50" />
-                            </td>
-                            <td class="tdLabel">メールアドレス：</td>
-                            <td class="tdItem">
-                                <input type="text" asp-for="@Model.Mail" class="textbox w240" maxlength="50" />
-                            </td>
-                        </tr>
-                    　　<tr>
-                            <td class="tdItem">
-                                <button class="btnSearch w120">検索</button>
-                            </td>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-        </div>
         @* 検索結果 *@
-        <table class="DataGrid">
-                <tr>
-                    <th class="w90">社員番号</th>
-                    <th class="w240">氏名かな</th>
-                    <th class="w90">メールアドレス</th>
-                </tr>
-        </table>
-        <div class="data_grid">
-             <input type="hidden" asp-for="@Model.Id" />
-        </div>
+      
     </div>
 </form>

@@ -1,7 +1,6 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using TutoRealBE.Context;
+using TutoRealBE.Entity;
 using TutoRealBE.Result;
 using TutoRealBF;
 using TutoRealCS.Models;
@@ -19,7 +18,7 @@ namespace TutoRealCS.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> index(string id)
+        public async Task<IActionResult> Index(int EmpId)
         {
             // 永続保持情報を取得
             MasterDataResult? master = (MasterDataResult)GetSession(SESSIONKEY.MASTERDATAS);
@@ -33,30 +32,31 @@ namespace TutoRealCS.Controllers
             // ViewModelの初期化
             EmpInfoViewModel empVM = new();
 
-            // 書籍idが連携された場合は情報を取得する
-            if (string.IsNullOrWhiteSpace(id))
+
+            // EmpIdを取得する
+            if (EmpId != 0)
             {
                 empVM = new EmpInfoViewModel()
                 {
-                    title = "登録",
+                    title = "社員情報",
+                    EmpId = EmpId,
+                    DeptCode = empVM.DeptCode,
+                    Seikanji = empVM.Seikanji,
+                    Meikanji = empVM.Meikanji,
+                    Seikana = empVM.Seikana,
+                    Meikana = empVM.Meikana,
+                    MailAddress = empVM.MailAddress,    
                 };
-                return View(empVM); // IDが空の場合はビューを返す
             }
             else
             {
                 EmpInfoGetContext context = new EmpInfoGetContext()
                 {
-                    Id = id,
+                   EmpId = EmpId
                 };
-
-                return View(empVM); // IDが存在する場合のビューを返す
-            }
+                   
+                }
+            return View("EmpInfo", empVM); // ビューを返す
         }
-
     }
 }
-
-
-
-
-

@@ -31,5 +31,6 @@ namespace TutoRealBE
         /// 対象データ件数(取得・登録・更新・削除)
         /// </summary>
         public int DataCount { get; set; }
+        public int EmpId { get; set; }
     }
 }

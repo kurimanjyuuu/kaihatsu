@@ -752,7 +752,7 @@ tr:focus td {
 .tdItem {
     border: solid 1px #C1B7B8;
 }
-.buttin {
+.buttun {
     border: solid 1px #C1B7B8;
     display: flex; /* Flexboxを適用 */
     justify-content: center; /* 中央揃え（オプション） */

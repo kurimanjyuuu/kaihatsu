@@ -6,6 +6,7 @@ using TutoRealBE.Result;
 using TutoRealBF;
 using TutoRealCS.Models;
 using static TutoRealCommon.CommonConst;
+using CE = TutoRealBE.Entity.CommonEntity;
 
 namespace TutoRealCS.Controllers
 {
@@ -13,7 +14,7 @@ namespace TutoRealCS.Controllers
     {
         private readonly ITutoRealBaseBF _baseBF;
 
-        public EmpInfoController(ITutoRealBaseBF baseBF) : base(baseBF)
+       public EmpInfoController(ITutoRealBaseBF baseBF) : base(baseBF)
         {
             _baseBF = baseBF;
         }
@@ -23,11 +24,12 @@ namespace TutoRealCS.Controllers
         {         
             return View("EmpInfo"); // ビューを返す
         }
-
-        public async Task<IActionResult> Regist(IFormFile fileInput, EmpInfoViewModel formData)
+        [HttpPost]
+        public async Task<IActionResult> Regist(EmpInfoViewModel formData)
         {
             EmpInfoGetContext context = new EmpInfoGetContext()
             {
+                ProcessKbn = CE.ProcessKbn.Insert,
                 EmpId7 = formData.EmpId7,
                 DeptCode4 = formData.DeptCode4,
                 Seikanji = formData.Seikanji,

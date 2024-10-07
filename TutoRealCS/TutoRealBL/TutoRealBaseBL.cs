@@ -57,7 +57,6 @@ namespace TutoRealBL
                 BookConditionContext cond => await new BookBL(_dbContext, _configuration).SelectAsync(cond),
                 BaseContext parent => await new MasterBL(_dbContext, _configuration).SelectAsync(parent),
                 BookGetContext parent => await new BookBL(_dbContext, _configuration).GetAsync(parent),
-                EmpInfoGetContext parent => await new EmpBL(_dbContext, _configuration).GetAsync(parent),
                 _ => throw new ArgumentException("未対応のコンテキストです。", nameof(context))
             };
         }

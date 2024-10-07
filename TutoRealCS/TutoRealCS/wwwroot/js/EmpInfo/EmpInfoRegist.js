@@ -58,19 +58,18 @@ $(function () {
         try {
             showLoading();
             // ファイル情報
-            var formData = new FormData();
-            var serializedData = $('#trForm').serialize();
-            $.each(serializedData.split('&'), function () {
-                var pair = this.split('=');
-                formData.append(decodeURIComponent(pair[0]), decodeURIComponent(pair[1]));
-            });
+            var formData = $('#trForm').serialize();
+            //$.each(serializedData.split('&'), function () {
+            //    var pair = this.split('=');
+            // formData.append(decodeURIComponent(pair[0]), decodeURIComponent(pair[1]));
+            // });
             
             //入力情報の登録
             // AJAXリクエストを開始
             $.ajax({
-                url: '/EmpInfo/Regist', // コントローラーのアクションへのパス
+                url: '/EmpInfo/Regist?formData=' + formData, // コントローラーのアクションへのパス
                 type: 'POST',
-                data: formData, // フォームのデータをシリアライズ
+                // data: formData, // フォームのデータをシリアライズ
                 contentType: false, // デフォルトのContent-Typeを使用
                 processData: false, // データを処理せず、そのまま送信
                 success: function (response) {

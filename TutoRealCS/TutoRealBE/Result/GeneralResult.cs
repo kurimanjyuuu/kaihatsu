@@ -39,5 +39,6 @@ namespace TutoRealBE.Result
         }
 
         public string PK { get; set; } = string.Empty;
+        public bool Success { get; set; }
     }
 }

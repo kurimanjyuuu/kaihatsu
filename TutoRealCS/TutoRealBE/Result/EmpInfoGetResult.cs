@@ -22,8 +22,8 @@ namespace TutoRealBE.Context
             var obj = JsonSerializer.Deserialize<EmpInfoGetResult>(serializedData);
             if (obj != null)
             {
-                EmpId = obj.EmpId;
-                DeptCode = obj.DeptCode;
+                EmpId7 = obj.EmpId7;
+                DeptCode4 = obj.DeptCode4;
                 SeiKanji = obj.SeiKanji;
                 MeiKanji = obj.MeiKanji;
                 SeiKana = obj.SeiKana;
@@ -35,12 +35,12 @@ namespace TutoRealBE.Context
         /// <summary>
         /// 社員番号
         /// </summary>
-        public int EmpId { get; set; }
+        public string EmpId7 { get; set; } = string.Empty; // char
 
         /// <summary>
         /// 部署コード
         /// </summary>
-        public int DeptCode { get; set; }
+        public string DeptCode4 { get; set; } = string.Empty; // nchar
 
         /// <summary>
         /// 姓

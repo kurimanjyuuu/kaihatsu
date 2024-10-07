@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NmhMW+dRBS8=",
+  "dgSpecHash": "TUXnY0F7e7s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\seraku\\Desktop\\seraku_kensyu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj",
+  "projectFilePath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seraku\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\seraku\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

@@ -20,28 +20,25 @@ namespace TutoRealBE.Context
             var obj = JsonSerializer.Deserialize<EmpInfoGetContext>(serializedData);
             if (obj != null)
             {
-                EmpId = obj.EmpId;
-                DeptCode = obj.DeptCode;
+                EmpId7 = obj.EmpId7;
+                DeptCode4 = obj.DeptCode4;
                 Seikanji = obj.Seikanji;
-                MeiKanji = obj.MeiKanji;
+                Meikanji = obj.Meikanji;
                 Seikana = obj.Seikana;
                 Meikana = obj.Meikana;
                 MailAddress = obj.MailAddress;
-
-                // 入力データの検証
-                Validate();
             }
         }
 
         /// <summary>
         /// 社員番号
         /// </summary>
-        public int EmpId { get; set; }
+        public string EmpId7 { get; set; } = string.Empty; // char
 
         /// <summary>
         /// 部署コード
         /// </summary>
-        public int DeptCode { get; set; }
+        public string DeptCode4 { get; set; } = string.Empty; // nchar
 
         /// <summary>
         /// 姓
@@ -51,7 +48,7 @@ namespace TutoRealBE.Context
         /// <summary>
         /// 名
         /// </summary>
-        public string MeiKanji { get; set; } = string.Empty;
+        public string Meikanji { get; set; } = string.Empty;
 
         /// <summary>
         /// せい
@@ -68,40 +65,5 @@ namespace TutoRealBE.Context
         /// </summary>
         public string MailAddress { get; set; } = string.Empty;
 
-        /// <summary>
-        /// フルネーム 漢字
-        /// </summary>
-        public string FullNameKanji => $"{Seikanji} {MeiKanji}";
-
-        /// <summary>
-        /// フルネーム かな
-        /// </summary>
-        public string FullNameKana => $"{Seikana} {Meikana}";
-
-        /// <summary>
-        /// 入力データの検証
-        /// </summary>
-        private void Validate()
-        {
-            if (EmpId <= 7)
-            {
-                throw new ArgumentException("社員番号は7桁でなければなりません。");
-            }
-
-            if (DeptCode <= 4)
-            {
-                throw new ArgumentException("部署コードは4桁でなければなりません。");
-            }
-
-            // メールアドレスの検証
-            try
-            {
-                var mailAddress = new MailAddress(MailAddress);
-            }
-            catch (FormatException)
-            {
-                throw new ArgumentException("メールアドレスの形式が正しくありません。");
-            }
-        }
     }
 }

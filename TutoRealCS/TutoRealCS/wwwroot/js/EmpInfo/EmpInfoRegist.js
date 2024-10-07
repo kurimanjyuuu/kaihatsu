@@ -59,17 +59,14 @@ $(function () {
             showLoading();
             // ファイル情報
             var formData = $('#trForm').serialize();
-            //$.each(serializedData.split('&'), function () {
-            //    var pair = this.split('=');
-            // formData.append(decodeURIComponent(pair[0]), decodeURIComponent(pair[1]));
-            // });
             
             //入力情報の登録
             // AJAXリクエストを開始
             $.ajax({
-                url: '/EmpInfo/Regist?formData=' + formData, // コントローラーのアクションへのパス
+                // url: '/EmpInfo/Regist?formData=' + formData,
+                url: '/EmpInfo/Regist', // コントローラーのアクションへのパス
                 type: 'POST',
-                // data: formData, // フォームのデータをシリアライズ
+                data: formData, // フォームのデータをシリアライズ
                 contentType: false, // デフォルトのContent-Typeを使用
                 processData: false, // データを処理せず、そのまま送信
                 success: function (response) {
@@ -89,7 +86,7 @@ $(function () {
                             window.location.reload();
                         } else {
                             // ボタンB（画面遷移）がクリックされたときの処理
-                            window.location.href = '/EmpInfo/Index';
+            N                  window.location.href = '/EmpInfo/Index';
                         }
                     });
                 },
@@ -108,10 +105,3 @@ $(function () {
         }
     });
 });
-
-function getCheckedValues() {
-    var values = $('.CategoryCheck:checked').map(function () {
-        return this.value;
-    }).get();
-    return values;
-}

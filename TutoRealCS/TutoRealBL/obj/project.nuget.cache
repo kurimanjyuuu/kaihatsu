@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4JINmeg89bw=",
+  "dgSpecHash": "oM69yuA2Qu0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj",
+  "projectFilePath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seraku\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\seraku\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

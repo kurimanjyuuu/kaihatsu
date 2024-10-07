@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj": {}
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
+        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
         "projectName": "TutoRealBE",
-        "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
+        "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
         "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\obj\\",
+        "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj": {
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj",
+        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj",
         "projectName": "TutoRealBF",
-        "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj",
+        "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj",
         "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\obj\\",
+        "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,11 +108,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
               },
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj": {
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj",
+        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj",
         "projectName": "TutoRealBL",
-        "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj",
+        "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBL\\TutoRealBL.csproj",
         "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBL\\obj\\",
+        "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -180,17 +180,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
               },
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBF\\TutoRealBF.csproj"
               },
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj"
               },
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj"
               }
             }
           }
@@ -229,14 +229,14 @@
         }
       }
     },
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj": {
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj",
+        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj",
         "projectName": "TutoRealCommon",
-        "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj",
+        "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj",
         "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealCommon\\obj\\",
+        "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealCommon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -258,8 +258,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
               }
             }
           }
@@ -312,14 +312,14 @@
         }
       }
     },
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj": {
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj",
+        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj",
         "projectName": "TutoRealDA",
-        "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj",
+        "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealDA\\TutoRealDA.csproj",
         "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealDA\\obj\\",
+        "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealDA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -341,11 +341,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
               },
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealCommon\\TutoRealCommon.csproj"
               }
             }
           }
@@ -398,14 +398,14 @@
         }
       }
     },
-    "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj": {
+    "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj",
+        "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj",
         "projectName": "TutoRealIF",
-        "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj",
+        "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\TutoRealIF.csproj",
         "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealIF\\obj\\",
+        "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealIF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -427,8 +427,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
-                "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
+              "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj": {
+                "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj"
               }
             }
           }

@@ -8008,11 +8008,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
+      "projectUniqueName": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
       "projectName": "TutoRealBE",
-      "projectPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
+      "projectPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\TutoRealBE.csproj",
       "packagesPath": "C:\\Users\\seraku\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seraku\\Desktop\\研修\\kaihatsu\\TutoRealCS\\TutoRealBE\\obj\\",
+      "outputPath": "C:\\Users\\seraku\\Desktop\\works\\TutoRealCS\\TutoRealBE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

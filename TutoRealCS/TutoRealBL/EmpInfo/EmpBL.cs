@@ -19,16 +19,19 @@ namespace TutoRealBL
 
         public EmpBL(TutoRealDbContext context, IConfiguration configuration) : base(context, configuration)
         {
+            // TutoRealDbContext から IDbConnection を取得
             IDbConnection dbConnection = context.Database.GetDbConnection();
+
+            // DAのインスタンスを作成し、IDbConnectionを渡します。
             _da = new EmpDA(dbConnection, configuration);
         }
 
-        public async Task<IEnumerable<ParentContext>> SelectAsync(EmpInfoGetContext context)
+        public async Task<IEnumerable<EmpInfoGetResult>> SelectAsync(EmpInfoGetContext context)
         {
+            // StandByDAを使用して認証データを取得
             IEnumerable<EmpInfoGetResult> result = await _da.SelectAsync(context);
 
-            // EmpInfoGetResultをParentContextにキャスト
-            return result.Cast<ParentContext>(); // もしくは
+            return result;
         }
 
         public async Task<IEnumerable<GeneralResult>> InsertAsync(EmpInfoGetContext context)
@@ -51,7 +54,7 @@ namespace TutoRealBL
             return pk;
         }
 
-        public async Task<IEnumerable<GeneralResult>> DeleteAsync(EmpInfoGetContext context)
+        public async Task<IEnumerable<GeneralResult>> DeleteAsync(StandByConditionContext context)
         {
             return await _da.DeleteAsync(context);
         }

@@ -22,7 +22,8 @@ namespace TutoRealBE.Context
             var obj = JsonSerializer.Deserialize<EmpInfoGetResult>(serializedData);
             if (obj != null)
             {
-                EmpId7 = obj.EmpId7;
+                // 親クラスのプロパティに値を設定
+                EmpId7 = obj.EmpId7; // 親クラスのプロパティ
                 DeptCode4 = obj.DeptCode4;
                 SeiKanji = obj.SeiKanji;
                 MeiKanji = obj.MeiKanji;

@@ -1,9 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics;
-using System.Security.Claims;
+﻿using System;
 using System.Text.Json;
-using TutoRealBE.Context;
-using CE = TutoRealBE.Entity.CommonEntity;
+using static TutoRealBE.Entity.CommonEntity;
 
 namespace TutoRealBE
 {
@@ -26,13 +23,12 @@ namespace TutoRealBE
         /// </summary>
         public string ErrorMsg { get; set; } = string.Empty;
 
-        public CE.ProcessKbn ProcessKbn { get; set; }
+        public ProcessKbn ProcessKbn { get; set; }
 
         /// <summary>
         /// 対象データ件数(取得・登録・更新・削除)
         /// </summary>
         public int DataCount { get; set; }
-        public string EmpId7 { get; set; } = string.Empty;
-       
+
     }
 }

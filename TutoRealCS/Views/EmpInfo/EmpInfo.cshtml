@@ -1,0 +1,132 @@
+﻿@* ViewModelを指定する *@
+@model EmpInfoViewModel
+@{
+    ViewData["Title"] = "社員情報";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/EmpInfo/EmpInfo.css" asp-append-version="true" />
+}
+
+@section Scripts {
+    <script src="~/js/EmpInfo/Emp.js"></script>
+    <script src="~/js/EmpInfo/EmpSelect.js"></script>
+    <script src="~/js/EmpInfo/EmpDelete.js"></script>
+}
+
+<form id="trForm" class="card startform" asp-controller="EmpInfo" asp-action="Regist" method="POST" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="maincontents-layout">
+        <div class="card">
+            <label class="lblRegion">登録条件</label><br />
+            <div class="divRegion">
+                <table class="tableEmpInfo">
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">社員番号：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.empId7" id="EmpId" class="textbox w240" maxlength="7" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">部署コード：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.deptCode4" id="DeptCode" class="textbox w240" maxlength="4" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">姓：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.seiKanji" id="Seikanji" class="textbox w240" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">名：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.meiKanji" id="Meikanji" class="textbox w240" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">せい：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.seiKana" id="Seikana" class="textbox w240" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">めい：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.meiKana" id="Meikana" class="textbox w240" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="tdLabel">メールアドレス：</td>
+                        <td class="tdItem">
+                            <input type="text" asp-for="@Model.mailAddress" id="MailAddress" class="textbox w240" maxlength="50" />
+                        </td>
+                    </tr>
+                    <tr class="trFixHeight">
+                        <td class="button">
+                            <input type="button" name="Register" class="btnActive w120" value="登録" />
+                        </td>
+                        <td class="button">
+                            <input type="button" name="Search" class="btnSearch w120" value="検索" />
+                        </td>
+                        <td class="button">
+                            <input type="button" name="Delete" class="btnDelete w120" value="削除" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="data_grid">
+            <table class="DataGrid">
+                <thead>
+                    <tr>
+                        <th>社員番号</th>
+                        <th>部署コード</th>
+                        <th>姓</th>
+                        <th>名</th>
+                        <th>せい</th>
+                        <th>めい</th>
+                        <th>メールアドレス</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null)
+                    {
+                        foreach (var datas in Model.DataList)
+                        {
+                            <tr>
+                                <td>@datas.empId7</td>
+                                <td>@datas.deptCode4</td>
+                                <td>@datas.seiKanji</td>
+                                <td>@datas.meiKanji</td>
+                                <td>@datas.seiKana</td>
+                                <td>@datas.meiKana</td>
+                                <td>@datas.mailAddress</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="7">データがありません。</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>
